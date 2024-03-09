@@ -1,0 +1,130 @@
+.videoRecommend {
+  border-bottom: 0.3px solid var(--border-color);
+  cursor: pointer;
+}
+.videoRecommend_left {
+  position: relative;
+  text-align: center;
+  padding-left: 0 !important;
+}
+.videoRecommend_thumbnail {
+  width: 100%;
+}
+.videoRecommend_thumbnail_wrapper {
+  width: 100%;
+}
+.videoRecommend_thumbnail-channel {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.video_duration {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 1rem;
+  padding: 0 0.2rem;
+  background-color: #08080890;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+.video_duration_searchScreen {
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+  padding: 0 0.2rem;
+  background-color: #080808;
+  border-radius: 3px;
+}
+
+.videoRecommend_right_searchScreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.videoRecommend_right_title {
+  font-size: 1rem;
+  color: white;
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.videoRecommend_right_title_searchScreen {
+  font-size: 0.8rem;
+  color: white;
+  letter-spacing: 0.3px;
+  margin-bottom: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.videoRecommend_right_details {
+  font-size: 0.8rem;
+}
+.videoRecommend_right_details p {
+  margin-bottom: 0;
+}
+.videoRecommend_channel img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.videoRecommend_channel p {
+  font-size: 0.9rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.videoRecommend_right_details span img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.videoRecommend_desc {
+  font-size: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width: 520px) {
+  .videoRecommend {
+    font-size: 0.8rem;
+  }
+  .videoRecommend_details {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+  .videoRecommend_channel {
+    margin: 0.1rem 0;
+  }
+  .videoRecommend_channel img {
+    display: none;
+  }
+  .videoRecommend_desc {
+    display: none;
+  }
+  .videoRecommend_title {
+    font-size: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

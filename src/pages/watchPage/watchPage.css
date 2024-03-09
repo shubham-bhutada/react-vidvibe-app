@@ -1,0 +1,12 @@
+.watchPage_player {
+  width: 100%;
+  height: 60vh;
+  background-color: #353946;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .watchPage_player {
+    height: 50vw;
+  }
+}

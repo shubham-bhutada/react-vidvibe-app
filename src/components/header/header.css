@@ -1,0 +1,106 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--black-primary);
+  padding: 1rem 2rem;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 50;
+}
+
+.header_menu {
+  display: none;
+}
+
+.header_logo {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  display: block;
+}
+
+.vidVibe {
+  font-weight: 600;
+  color: #168599;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header form {
+  display: flex;
+  flex: 0.6;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  background-color: var(--black-secondary);
+}
+.header form input {
+  width: 100%;
+  border: none;
+  font-weight: 500;
+  background: transparent;
+  padding: 0.3rem 1rem;
+  color: var(--text-color);
+}
+.header form input:focus {
+  outline: none;
+}
+.header form button {
+  padding: 0 1.25rem;
+  color: var(--text-color);
+  background-color: var(--border-color);
+  border: none;
+  overflow: hidden;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+.header form button:focus {
+  border: none;
+}
+
+.header_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0.15;
+  gap: 0.5rem;
+}
+.header_icons img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  margin-left: 0.2rem;
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    padding: 1rem;
+  }
+  .header form {
+    flex: 1;
+  }
+  .header_menu {
+    display: block;
+    margin-right: 0.8rem;
+    cursor: pointer;
+  }
+  .header_logo {
+    display: none;
+  }
+  .vidVibe {
+    display: none;
+  }
+  .header_icons *:not(img) {
+    display: none;
+  }
+}

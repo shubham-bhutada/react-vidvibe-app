@@ -1,0 +1,84 @@
+.videoMetaData_top span {
+  cursor: pointer;
+}
+
+.videoMetaData_channel img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+}
+.subscribe button {
+  background-color: red;
+  color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.btn-gray {
+  background-color: var(--border-color) !important;
+}
+.subscribe button:hover {
+  color: white;
+  background-color: var(--border-color);
+}
+.subscribe button :focus {
+  border: none;
+  outline: none;
+}
+
+.videoMetaData_description {
+  font-size: 0.9rem;
+  white-space: pre-line;
+  padding: 0.5rem;
+  background-color: var(--border-color);
+  border-radius: 0.5rem;
+}
+
+.showMoreText {
+  text-decoration: none;
+  display: block;
+  margin: 1rem 0;
+  color: white;
+  font-weight: 500;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+
+.subscribe {
+  gap: 0.5rem;
+}
+
+.subscribe span {
+  cursor: pointer;
+}
+
+.channel_info span:first-child {
+  color: #fff;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 520px) {
+  .videoMetaData h5 {
+    font-size: 1.1rem;
+  }
+  .channel_info span {
+    font-size: 0.9rem;
+  }
+  .subscribe button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .videoMetaData_channel {
+    flex-direction: column !important;
+    gap: 1rem;
+  }
+  .channel_info span {
+    font-size: 1rem;
+  }
+}

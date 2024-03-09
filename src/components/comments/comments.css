@@ -1,0 +1,47 @@
+.comment-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+}
+
+.comments_form input {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid var(--border-color);
+}
+.comments_form input:focus {
+  outline: none;
+}
+
+.comments_form button {
+  background-color: var(--border-color);
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.comments_form button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .comments_form form {
+    width: 80vw !important;
+  }
+  .comments_form img {
+    width: 36px;
+    height: 36px;
+    margin-right: 0.5rem;
+  }
+  .comments_form form input {
+    padding: 0.25rem;
+    font-size: 0.8rem;
+  }
+  .comments_form form button {
+    font-size: 0.7rem;
+  }
+}

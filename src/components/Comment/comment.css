@@ -1,0 +1,33 @@
+.comment-reply-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-left: 0.2rem;
+  margin-right: 1rem;
+}
+
+.comment {
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--border-color);
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+.comment_header {
+  color: white;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 480px) {
+  .comment-reply-avatar {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.5rem;
+  }
+  .comment_header {
+    font-size: 0.9rem;
+  }
+  .comment_body p:last-child {
+    font-size: 0.8rem;
+  }
+}

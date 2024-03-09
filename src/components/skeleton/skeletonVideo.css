@@ -1,0 +1,28 @@
+.skeleton-video {
+  width: 100%;
+  margin: 1rem 0;
+}
+.skeleton-top-box {
+  height: 180px;
+  background-color: #3c4147;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+.skeleton-bottom-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.skeleton-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #3c4147;
+  margin: 0.5rem;
+}
+.skeleton-rec {
+  background-color: #3c4147;
+  height: 40px;
+  width: 75%;
+  border-radius: 0.25rem;
+}
